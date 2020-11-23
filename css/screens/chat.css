@@ -37,7 +37,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.2s linear;
 }
 
 .chat__timestamp {
@@ -53,6 +52,21 @@
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  opacity: 0;
+  animation: fadeIn 0.2s linear forwards;
+}
+
+.message-row:nth-child(3) {
+  animation-delay: 0.1s;
+}
+.message-row:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.message-row:nth-child(5) {
+  animation-delay: 0.3s;
+}
+.message-row:last-child {
+  animation-delay: 0.4s;
 }
 
 .message-row img {
